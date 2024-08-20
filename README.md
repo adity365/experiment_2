@@ -48,55 +48,57 @@ Data types can have modifiers, such as Short Long Signed Unsigned, which can mak
 
 ## CODE 
 ```
-// arithematic operator
-// assignment operator
-// comparison operator
-// bitwise operator
-// Aditya Agarwal
-// 23070123162
+//Aditya Agarwal
+//23070123162
+//ENTC B3
+//Experiment 2 Finding the sizes of primitive datatypes 
 #include <iostream>
 using namespace std;
 
-int main(){
-    int a, b, sum, diff, prod, div, mod;
-
-    cout << "Enter the value of a: ";
-    cin >> a;
-
-    cout << "Enter the value of b: ";
-    cin >> b;
-
-    // Assignment operator 
-    sum = a + b;
-    cout << "The sum of the two numbers entered is: " << sum << endl;
-
-    diff = a - b;
-    cout << "The difference of the two numbers entered is: " << diff << endl;
-
-    prod = a * b;
-    cout << "The product of the two numbers entered is: " << prod << endl;
-
-    div = a / b;
-    cout << "The division of the two numbers entered is: " << div << endl;
-
-    mod = a % b;
-    cout << "The remainder obtained when we divide two numbers is: " << mod << endl;
-
-    // Comparison operator
-    if (a > b) {
-        cout << "First number entered is greater" << endl;
-    } else if (a < b) {
-        cout << "Second number entered is greater" << endl;
-    } else {
-        cout << "Both numbers are equal" <<endl;
-    }
-
+int main() 
+{
+    char a = 's';
+    cout << "The size of a character is: "<< sizeof(a) << endl;
+    int b = 123456;
+    cout << "The size of an integer is: "<< sizeof(b) << endl;
+    short int c = 1233;
+    cout << "The size of a short integer is: "<< sizeof(c) << endl;
+    long int d = 12739482;
+    cout << "The size of a long integer is: "<< sizeof(d) << endl;
+    long long int e = 122388728;
+    cout << "The size of a long long integer is: "<< sizeof(e) << endl;
+    float f = 27168.5;
+    cout << "The sie of a float is: " << sizeof(f) << endl;
+    double g = 84273923.89877;
+    cout <<"The size of a double floating point is: "<< sizeof(g) << endl;
+    long double h = 8742980.789793;
+    cout<< "The size of long double floating point is: "<<sizeof(h) << endl;
+    cout<< "The size of a wide character is: "<<sizeof(wchar_t) << endl;
+    return 0;
 }
+
+
+/*output
+
+The size of a character is: 1
+The size of an integer is: 4
+The size of a short integer is: 2
+The size of a long integer is: 4
+The size of a long long integer is: 8
+The sie of a float is: 4
+The size of a double floating point is: 8
+The size of long double floating point is: 16
+The size of a wide character is: 2
+
+
+*/
+
+
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/c8b8fe5f-0062-4415-ba90-c26840171366)
 
+![image](https://github.com/user-attachments/assets/89180832-d919-46ea-b73c-d2d3e765b1e8)
 
 
 ## CONCLUSION
