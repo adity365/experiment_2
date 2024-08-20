@@ -48,48 +48,55 @@ Data types can have modifiers, such as Short Long Signed Unsigned, which can mak
 
 ## CODE 
 ```
+// arithematic operator
+// assignment operator
+// comparison operator
+// bitwise operator
+// Aditya Agarwal
+// 23070123162
 #include <iostream>
 using namespace std;
 
 int main(){
+    int a, b, sum, diff, prod, div, mod;
 
-    int a,b;
-    cout <<"Enter the value of first number " << endl;
+    cout << "Enter the value of a: ";
     cin >> a;
 
-    cout <<"Enter the value of Second number " << endl;
+    cout << "Enter the value of b: ";
     cin >> b;
 
-    int sum = a + b;
-    cout << "The sum of the two numbers entered is " << sum << endl;
+    // Assignment operator 
+    sum = a + b;
+    cout << "The sum of the two numbers entered is: " << sum << endl;
 
-    int prod = a*b;
-    cout << "The product of the two numbers entered is " << prod << endl;
+    diff = a - b;
+    cout << "The difference of the two numbers entered is: " << diff << endl;
 
-    int c;
-    cout << "Enter a number " << endl;
-    cin >> c;
+    prod = a * b;
+    cout << "The product of the two numbers entered is: " << prod << endl;
 
-    if(c%2==0){
-        cout << "The number entered is an even number " << endl;
-    }else {
-        cout << "The number entered is an odd number " << endl;
+    div = a / b;
+    cout << "The division of the two numbers entered is: " << div << endl;
+
+    mod = a % b;
+    cout << "The remainder obtained when we divide two numbers is: " << mod << endl;
+
+    // Comparison operator
+    if (a > b) {
+        cout << "First number entered is greater" << endl;
+    } else if (a < b) {
+        cout << "Second number entered is greater" << endl;
+    } else {
+        cout << "Both numbers are equal" <<endl;
     }
 
-    int d;
-    cout << "Enter the year you want to check it is a leap year or not " << endl;
-    cin >> d;
-    if((d% 400 == 0)||(d % 100 != 0) && (d % 4 == 0)){
-        cout << "The year entered is a leap year " << endl;
-    }else {
-        cout << "The year entered is not a leap year " << endl;
-    }
-    
 }
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/ce6bce57-01e8-4111-94b9-1c2ca1b63d3d)
+![image](https://github.com/user-attachments/assets/c8b8fe5f-0062-4415-ba90-c26840171366)
+
 
 
 ## CONCLUSION
