@@ -46,7 +46,7 @@ Data types can have modifiers, such as Short Long Signed Unsigned, which can mak
 (12 bytes)	
 
 
-## CODE 
+## CODE :
 ```
 //Aditya Agarwal
 //23070123162
@@ -100,6 +100,34 @@ The size of a wide character is: 2
 
 ![image](https://github.com/user-attachments/assets/89180832-d919-46ea-b73c-d2d3e765b1e8)
 
+## Code for Storage Class
 
-## CONCLUSION
+```
+#include<iostream>
+using namespace std;
+
+extern int extern_variable =30;
+
+
+int main()
+{
+    auto a = 8;
+    register int registered_variable = 100;
+    static int s = 7;
+    cout << "The local variable: "<< a << std::endl;
+    cout <<"The variable in register: "<<registered_variable<<endl;
+    std::cout<<"External variable: "<<extern_variable<<endl;
+    s = 10;
+    cout<<"The static variable: "<<s<<endl;
+
+}
+
+```
+
+## Output :
+![image](https://github.com/user-attachments/assets/5d871c27-4120-44f7-9a0a-404852803561)
+
+
+
+## CONCLUSION :
 Learnt different types of data type and how to use them in c++.
